@@ -5,7 +5,7 @@ If you notice some functions missing, or any error don't hesitate to create a is
 
 ## Installation Guide :
 
-- Go to "Microsoft VS Code" Folder (Probably : C:\Users\[ProfileName]\AppData\Local\Programs\Microsoft VS Code)
+- Go to "Microsoft VS Code" Folder (Probably : C:\Users\\[ProfileName]\AppData\Local\Programs\Microsoft VS Code)
 
 - Go to "resources" -> "app" -> "extensions"
 
