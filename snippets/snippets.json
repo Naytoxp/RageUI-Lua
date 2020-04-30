@@ -1,0 +1,260 @@
+{
+    "RageUI.SetScaleformParams": {
+        "prefix": "RageUI.SetScaleformParams",
+        "body": [
+            "RageUI.SetScaleformParams(${1:scaleform}, ${2:data})"
+        ]
+    },
+    "RageUI.Visible": {
+        "prefix": "RageUI.Visible",
+        "body": [
+            "RageUI.Visible(${1:Menu}, ${2:Value})"
+        ]
+    },
+    "RageUI.CloseAll": {
+        "prefix": "RageUI.CloseAll",
+        "body": [
+            "RageUI.CloseAll()"
+        ]
+    },
+    "RageUI.Banner": {
+        "prefix": "RageUI.Banner",
+        "body": [
+            "RageUI.Banner(${1:Enabled}, ${2:Glare})"
+        ]
+    },
+    "RageUI.Subtitle": {
+        "prefix": "RageUI.Subtitle",
+        "body": [
+            "RageUI.Subtitle()"
+        ]
+    },
+    "RageUI.Background": {
+        "prefix": "RageUI.Background",
+        "body": [
+            "RageUI.Background()"
+        ]
+    },
+    "RageUI.Description": {
+        "prefix": "RageUI.Description",
+        "body": [
+            "RageUI.Description()"
+        ]
+    },
+    "RageUI.Render": {
+        "prefix": "RageUI.Render",
+        "body": [
+            "RageUI.Render(${1:instructionalButton})"
+        ]
+    },
+    "RageUI.IsVisible": {
+        "prefix": "RageUI.IsVisible",
+        "body": [
+            "RageUI.IsVisible(RMenu:Get(${7:Type}, ${8:Menu}), ${2:header}, ${3:glare}, ${4:instructional}, function() \n -- Put your items here \n ${5:items} \n end, function() \n -- Put your panels here \n${6:panels}\n end)"
+        ]
+    },
+    "RageUI.CreateWhile": {
+        "prefix": "RageUI.CreateWhile",
+        "body": [
+            "RageUI.CreateWhile(${1:wait}, ${2:menu}, ${3:key}, ${4:closure})"
+        ]
+    },
+    "RMenu.Add": {
+        "prefix": "RMenu.Add",
+        "body": [
+            "RMenu.Add(${1:Type}, ${2:Name}, ${3:Menu})"
+        ]
+    },
+    "RMenu:Get": {
+        "prefix": "RMenu:Get",
+        "body": [
+            "RMenu:Get(${1:Type}, ${2:Name})"
+        ]
+    },
+    "RMenu:Settings": {
+        "prefix": "RMenu:Settings",
+        "body": [
+            "RMenu:Settings(${1:Type}, ${2:Name}, ${3:Settings}, ${4:Value})"
+        ]
+    },
+    "RMenu.Delete": {
+        "prefix": "RMenu.Delete",
+        "body": [
+            "RMenu.Delete(${1:Type}, ${2:Name})"
+        ]
+    },
+    "RMenu:DeleteType": {
+        "prefix": "RMenu.DeleteType",
+        "body": [
+            "RMenu.DeleteType(${1:Type})"
+        ]
+    },
+    "RageUI.Button": {
+        "prefix": "RageUI.Button",
+        "body": [
+            "RageUI.Button(${1:Label}, ${2:Description}, ${3:Style}, ${4:Enabled}, function(Hovered, Active, Selected) \n if ${5:Action} then \n -- Your action \n end \n end, ${6:Submenu})"
+        ]
+    },
+    "RageUI.CenterButton": {
+        "prefix": "RageUI.CenterButton",
+        "body": [
+            "RageUI.CenterButton(${1:Label}, ${2:Description}, ${3:Style}, ${4:Enabled}, function(Hovered, Active, Selected) \n if ${5:Action} then \n -- Your action \n end \n end, ${6:Submenu})"
+        ]
+    },
+    "RMenu:Separator": {
+        "prefix": "RMenu.Separator",
+        "body": [
+            "RMenu.Separator(${1:Separator})"
+        ]
+    },
+    "RageUI.Checkbox": {
+        "prefix": "RageUI.Checkbox",
+        "body": [
+            "RageUI.Checkbox(${1:Label}, ${2:Description}, ${3:Checked}, ${4:Style}, function(Hovered, Selected, Active, Checked) \n if ${5:Action} then \n -- Your action \n end \n end)"
+        ]
+    },
+    "RageUI.List": {
+        "prefix": "RageUI.List",
+        "body": [
+            "RageUI.List(${1:Label}, ${2:Items}, ${3:Index}, ${4:Description}, ${5:Style}, ${6:Enabled} function(Hovered, Active, Selected, Index) \n if ${7:Action} then \n -- Your action \n end \n end, ${8:Style}, ${9:Submenu})"
+        ]
+    },
+    "RageUI.Slider": {
+        "prefix": "RageUI.Slider",
+        "body": [
+            "RageUI.Slider(${1:Label}, ${2:ProgressStart}, ${3:ProgressMax}, ${4:Description}, {$5:Divider}, ${6:Style}, ${7:Enabled} function(Hovered, Active, Selected, Index) \n if ${8:Action} then \n -- Your action \n end \n end)"
+        ]
+    },
+    "RageUI.Progress": {
+        "prefix": "RageUI.Progress",
+        "body": [
+            "RageUI.Progress(${1:Label}, ${2:ProgressStart}, ${3:ProgressMax}, ${4:Description}, {$5:Counter}, ${6:Enabled}, function(Hovered, Active, Selected, Index) \n if ${7:Action} then \n -- Your action \n end \n end)"
+        ]
+    },
+    "RageUI.UISliderHeritage": {
+        "prefix": "RageUI.UISliderHeritage",
+        "body": [
+            "RageUI.UISliderHeritage(${1:Label}, ${2:ItemIndex}, ${3:Description}, function(Hovered, Selected, Active, Heritage, Index) \n if ${5:Action} then \n -- Your action \n end \n end, ${6:Value})"
+        ]
+    },
+    "RageUI.SliderProgress": {
+        "prefix": "RageUI.SliderProgress",
+        "body": [
+            "RageUI.SliderProgress(${1:Label}, ${2:ProgressStart}, ${3:ProgressMax}, ${4:Description}, {$5:Style}, ${6:Enabled}, function(Hovered, Selected, Active, ProgressStart) \n if ${7:Action} then \n -- Your action \n end \n end)"
+        ]
+    },
+    "RageUI.CreateMenu": {
+        "prefix": "RageUI.CreateMenu",
+        "body": [
+            "RageUI.CreateMenu(${1:Title}, ${2:Title}, ${3:X}, ${4:Y}, {$5:TextureDictionary}, ${6:TextureName}, ${7:R}, ${8:G}, ${9:B}, ${10:A})"
+        ]
+    },
+    "RageUI.CreateSubMenu": {
+        "prefix": "RageUI.CreateSubMenu",
+        "body": [
+            "RageUI.CreateSubMenu(${1:Title}, ${2:Title}, ${3:Subtitle}, ${4:X}, ${5:Y}, {$6:TextureDictionary}, ${7:TextureName}, ${8:R}, ${9:G}, ${10:B}, ${11:A})"
+        ]
+    },
+    "RMenu.Menus:SetSubtitle": {
+        "prefix": "RMenu:SetSubtitle",
+        "body": [
+            "RMenu:Get(${1:Type}, ${2:Title}):SetSubtitle(${3:Title})"
+        ]
+    },
+    "RMenu.Menus:SetPageCounter": {
+        "prefix": "RMenu:SetPageCounter",
+        "body": [
+            "RMenu:Get(${1:Type}, ${2:Title}):SetPageCounter(${3:Value})"
+        ]
+    },
+    "RMenu.Menus:EditSpriteColor": {
+        "prefix": "RMenu:EditSpriteColor",
+        "body": [
+            "RMenu:Get(${1:Type}, ${2:Title}):EditSpriteColor(${3:Color})"
+        ]
+    },
+    "RMenu.Menus:SetPosition": {
+        "prefix": "RMenu:SetPosition",
+        "body": [
+            "RMenu:Get(${1:Type}, ${2:Title}):SetPosition(${3:X}, ${4:Y})"
+        ]
+    },
+    "RMenu.Menus:SetTotalItemsPerPage": {
+        "prefix": "RMenu:SetTotalItemsPerPage",
+        "body": [
+            "RMenu:Get(${1:Type}, ${2:Title}):SetTotalItemsPerPage(${3:Value})"
+        ]
+    },
+
+    "RMenu.Menus:Closable": {
+        "prefix": "RMenu:Closable",
+        "body": [
+            "RMenu:Get(${1:Type}, ${2:Title}):Closable(${3:Boolean})"
+        ]
+    },
+    "RMenu.Menus:AddInstructionButton": {
+        "prefix": "RMenu:AddInstructionButton",
+        "body": [
+            "RMenu:Get(${1:Type}, ${2:Title}):AddInstructionButton({${3:buttonName}, ${4:string}})"
+        ]
+    },
+    "RMenu.Menus:RemoveInstructionButton": {
+        "prefix": "RMenu:RemoveInstructionButton",
+        "body": [
+            "RMenu:Get(${1:Type}, ${2:Title}):RemoveInstructionButton({${3:buttonName}, ${4:string}})"
+        ]
+    },
+    "RMenu.Menus:UpdateInstructionalButtons": {
+        "prefix": "RMenu:UpdateInstructionalButtons",
+        "body": [
+            "RMenu:Get(${1:Type}, ${2:Title}):UpdateInstructionalButtons(${3:Visible})"
+        ]
+    },
+    "RageUI.RefreshPagination": {
+        "prefix": "RageUI.RefreshPagination",
+        "body": [
+            "RageUI.RefreshPagination()"
+        ]
+    },
+    "RageUI.ColourPanel": {
+        "prefix": "RageUI.ColourPanel",
+        "body": [
+            "RageUI.ColourPanel(${1:Title}, ${2:Colours}, ${3:MinIndex}, ${4:CurIndex}, function(Hovered, Active, MinimumIndex, CurrentIndex) \n if ${5:Action} then \n -- Your action \n end \n end, ${6:Index})"
+        ]
+    },
+    "RageUI.GridPanel": {
+        "prefix": "RageUI.GridPanel",
+        "body": [
+            "RageUI.GridPanel(${1:X}, ${2:Y}, ${3:TopText}, ${4:BottomText}, {$5:LeftText}, ${6:RightText}, function(Hovered, Active, X, Y) \n if ${7:Action} then \n -- Your action \n end \n end, {8:Index} )"
+        ]
+    },
+    "RageUI.GridPanelHorizontal": {
+        "prefix": "RageUI.GridPanelHorizontal",
+        "body": [
+            "RageUI.GridPanelHorizontal(${1:X}, {$2:TopText}, ${3:BottomText}, function(Hovered, Active, X) \n if ${4:Action} then \n -- Your action \n end \n end, {5:Index} )"
+        ]
+    },    "RageUI.GridPanelVertical": {
+        "prefix": "RageUI.GridPanelVertical",
+        "body": [
+            "RageUI.GridPanelVertical(${1:Y}, {$2:LeftText}, ${3:RightText}, function(Hovered, Active, Y) \n if ${4:Action} then \n -- Your action \n end \n end, {5:Index} )"
+        ]
+    },    
+    "RageUI.PercentagePanel": {
+        "prefix": "RageUI.PercentagePanel",
+        "body": [
+            "RageUI.PercentagePanel(${1:Percent}, {$2:HeaderText}, ${3:MinText}, ${4:MaxText}, function(Hovered, Active, Y) \n if ${5:Action} then \n -- Your action \n end \n end, {6:Index} )"
+        ]
+    },    
+    "RageUI.StatisticPanel": {
+        "prefix": "RageUI.StatisticPanel",
+        "body": [
+            "RageUI.StatisticPanel(${1:Percent}, {$2:Text}, ${3:Index})"
+        ]
+    },    
+    "RageUI.HeritageWindow": {
+        "prefix": "RageUI.HeritageWindow",
+        "body": [
+            "RageUI.HeritageWindow(${1:Mum}, {$2:Dad})"
+        ]
+    },
+}

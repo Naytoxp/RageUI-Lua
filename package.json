@@ -1,0 +1,20 @@
+{
+    "name": "RageUI FiveM LUA",
+    "description": "RageUI Support and Autocompletion For Visual Studio Code \n From : https://github.com/iTexZoz/RageUI",
+    "version": "1.0.0",
+    "publisher": "Naytox",
+    "icon": "images/logo.png",
+    "license": "Free",
+    "engines": {
+        "vscode": "^1.0.0 Alpha"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [{
+            "language": "lua",
+            "path": "./snippets/snippets.json"
+        }]
+    }
+}
