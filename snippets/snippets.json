@@ -50,7 +50,7 @@
     "RageUI.IsVisible": {
         "prefix": "RageUI.IsVisible",
         "body": [
-            "RageUI.IsVisible(RMenu:Get(${7:Type}, ${8:Menu}), ${2:header}, ${3:glare}, ${4:instructional}, function() \n -- Put your items here \n ${5:items} \n end, function() \n -- Put your panels here \n${6:panels}\n end)"
+            "RageUI.IsVisible(RMenu:Get(${7:Type}, ${8:Menu}), ${2:header}, ${3:glare}, ${4:instructional}, function() \n\t-- Put your items here \n\t${5:items} \n\tend, function() \n\t--Put your panels here \n\t${6:panels}\n\tend)"
         ]
     },
     "RageUI.CreateWhile": {
@@ -92,13 +92,13 @@
     "RageUI.Button": {
         "prefix": "RageUI.Button",
         "body": [
-            "RageUI.Button(${1:Label}, ${2:Description}, ${3:Style}, ${4:Enabled}, function(Hovered, Active, Selected) \n if ${5:Action} then \n -- Your action \n end \n end, ${6:Submenu})"
+            "RageUI.Button(${1:Label}, ${2:Description}, ${3:Style}, ${4:Enabled}, function(Hovered, Active, Selected) \n\tif ${5:Action} then \n\t-- Your action \n\tend \n\tend, ${6:Submenu})"
         ]
     },
     "RageUI.CenterButton": {
         "prefix": "RageUI.CenterButton",
         "body": [
-            "RageUI.CenterButton(${1:Label}, ${2:Description}, ${3:Style}, ${4:Enabled}, function(Hovered, Active, Selected) \n if ${5:Action} then \n -- Your action \n end \n end, ${6:Submenu})"
+            "RageUI.CenterButton(${1:Label}, ${2:Description}, ${3:Style}, ${4:Enabled}, function(Hovered, Active, Selected) \n\tif ${5:Action} then \n\t-- Your action \n\tend \n\tend, ${6:Submenu})"
         ]
     },
     "RMenu:Separator": {
@@ -110,37 +110,37 @@
     "RageUI.Checkbox": {
         "prefix": "RageUI.Checkbox",
         "body": [
-            "RageUI.Checkbox(${1:Label}, ${2:Description}, ${3:Checked}, ${4:Style}, function(Hovered, Selected, Active, Checked) \n if ${5:Action} then \n -- Your action \n end \n end)"
+            "RageUI.Checkbox(${1:Label}, ${2:Description}, ${3:Checked}, ${4:Style}, function(Hovered, Selected, Active, Checked) \n\tif ${5:Action} then \n\t-- Your action \n\tend \n\tend)"
         ]
     },
     "RageUI.List": {
         "prefix": "RageUI.List",
         "body": [
-            "RageUI.List(${1:Label}, ${2:Items}, ${3:Index}, ${4:Description}, ${5:Style}, ${6:Enabled} function(Hovered, Active, Selected, Index) \n if ${7:Action} then \n -- Your action \n end \n end, ${8:Style}, ${9:Submenu})"
+            "RageUI.List(${1:Label}, ${2:Items}, ${3:Index}, ${4:Description}, ${5:Style}, ${6:Enabled} function(Hovered, Active, Selected, Index) \n\tif ${7:Action} then \n\t-- Your action \n\tend \n\tend, ${8:Style}, ${9:Submenu})"
         ]
     },
     "RageUI.Slider": {
         "prefix": "RageUI.Slider",
         "body": [
-            "RageUI.Slider(${1:Label}, ${2:ProgressStart}, ${3:ProgressMax}, ${4:Description}, {$5:Divider}, ${6:Style}, ${7:Enabled} function(Hovered, Active, Selected, Index) \n if ${8:Action} then \n -- Your action \n end \n end)"
+            "RageUI.Slider(${1:Label}, ${2:ProgressStart}, ${3:ProgressMax}, ${4:Description}, {$5:Divider}, ${6:Style}, ${7:Enabled} function(Hovered, Active, Selected, Index) \n\tif ${8:Action} then \n\t-- Your action \n\tend \n\tend)"
         ]
     },
     "RageUI.Progress": {
         "prefix": "RageUI.Progress",
         "body": [
-            "RageUI.Progress(${1:Label}, ${2:ProgressStart}, ${3:ProgressMax}, ${4:Description}, {$5:Counter}, ${6:Enabled}, function(Hovered, Active, Selected, Index) \n if ${7:Action} then \n -- Your action \n end \n end)"
+            "RageUI.Progress(${1:Label}, ${2:ProgressStart}, ${3:ProgressMax}, ${4:Description}, {$5:Counter}, ${6:Enabled}, function(Hovered, Active, Selected, Index) \n\tif ${7:Action} then \n\t-- Your action \n\tend \n\tend)"
         ]
     },
     "RageUI.UISliderHeritage": {
         "prefix": "RageUI.UISliderHeritage",
         "body": [
-            "RageUI.UISliderHeritage(${1:Label}, ${2:ItemIndex}, ${3:Description}, function(Hovered, Selected, Active, Heritage, Index) \n if ${5:Action} then \n -- Your action \n end \n end, ${6:Value})"
+            "RageUI.UISliderHeritage(${1:Label}, ${2:ItemIndex}, ${3:Description}, function(Hovered, Selected, Active, Heritage, Index) \n\tif ${5:Action} then \n\t-- Your action \n\tend \n\tend, ${6:Value})"
         ]
     },
     "RageUI.SliderProgress": {
         "prefix": "RageUI.SliderProgress",
         "body": [
-            "RageUI.SliderProgress(${1:Label}, ${2:ProgressStart}, ${3:ProgressMax}, ${4:Description}, {$5:Style}, ${6:Enabled}, function(Hovered, Selected, Active, ProgressStart) \n if ${7:Action} then \n -- Your action \n end \n end)"
+            "RageUI.SliderProgress(${1:Label}, ${2:ProgressStart}, ${3:ProgressMax}, ${4:Description}, {$5:Style}, ${6:Enabled}, function(Hovered, Selected, Active, ProgressStart) \n\tif ${7:Action} then \n\t-- Your action \n\tend \n\tend)"
         ]
     },
     "RageUI.CreateMenu": {
@@ -219,30 +219,30 @@
     "RageUI.ColourPanel": {
         "prefix": "RageUI.ColourPanel",
         "body": [
-            "RageUI.ColourPanel(${1:Title}, ${2:Colours}, ${3:MinIndex}, ${4:CurIndex}, function(Hovered, Active, MinimumIndex, CurrentIndex) \n if ${5:Action} then \n -- Your action \n end \n end, ${6:Index})"
+            "RageUI.ColourPanel(${1:Title}, ${2:Colours}, ${3:MinIndex}, ${4:CurIndex}, function(Hovered, Active, MinimumIndex, CurrentIndex) \n\tif ${5:Action} then \n\t-- Your action \n\tend \n\tend, ${6:Index})"
         ]
     },
     "RageUI.GridPanel": {
         "prefix": "RageUI.GridPanel",
         "body": [
-            "RageUI.GridPanel(${1:X}, ${2:Y}, ${3:TopText}, ${4:BottomText}, {$5:LeftText}, ${6:RightText}, function(Hovered, Active, X, Y) \n if ${7:Action} then \n -- Your action \n end \n end, {8:Index} )"
+            "RageUI.GridPanel(${1:X}, ${2:Y}, ${3:TopText}, ${4:BottomText}, {$5:LeftText}, ${6:RightText}, function(Hovered, Active, X, Y) \n\tif ${7:Action} then \n\t-- Your action \n\tend \n\tend, {8:Index} )"
         ]
     },
     "RageUI.GridPanelHorizontal": {
         "prefix": "RageUI.GridPanelHorizontal",
         "body": [
-            "RageUI.GridPanelHorizontal(${1:X}, {$2:TopText}, ${3:BottomText}, function(Hovered, Active, X) \n if ${4:Action} then \n -- Your action \n end \n end, {5:Index} )"
+            "RageUI.GridPanelHorizontal(${1:X}, {$2:TopText}, ${3:BottomText}, function(Hovered, Active, X) \n\tif ${4:Action} then \n\t-- Your action \n\tend \n\tend, {5:Index} )"
         ]
     },    "RageUI.GridPanelVertical": {
         "prefix": "RageUI.GridPanelVertical",
         "body": [
-            "RageUI.GridPanelVertical(${1:Y}, {$2:LeftText}, ${3:RightText}, function(Hovered, Active, Y) \n if ${4:Action} then \n -- Your action \n end \n end, {5:Index} )"
+            "RageUI.GridPanelVertical(${1:Y}, {$2:LeftText}, ${3:RightText}, function(Hovered, Active, Y) \n\tif ${4:Action} then \n\t-- Your action \n\tend \n\tend, {5:Index} )"
         ]
     },    
     "RageUI.PercentagePanel": {
         "prefix": "RageUI.PercentagePanel",
         "body": [
-            "RageUI.PercentagePanel(${1:Percent}, {$2:HeaderText}, ${3:MinText}, ${4:MaxText}, function(Hovered, Active, Y) \n if ${5:Action} then \n -- Your action \n end \n end, {6:Index} )"
+            "RageUI.PercentagePanel(${1:Percent}, {$2:HeaderText}, ${3:MinText}, ${4:MaxText}, function(Hovered, Active, Y) \n\tif ${5:Action} then \n\t-- Your action \n\tend \n\tend, {6:Index} )"
         ]
     },    
     "RageUI.StatisticPanel": {
