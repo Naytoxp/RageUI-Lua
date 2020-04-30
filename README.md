@@ -1,7 +1,7 @@
 # RageUI-Lua
 To use with : https://github.com/iTexZoz/RageUI
 
-If you notice some functions missing, don't hesitate to create a issue or to make a pull request.
+If you notice some functions missing, or any error don't hesitate to create a issue or to make a pull request.
 
 ## Installation Guide :
 
