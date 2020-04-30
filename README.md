@@ -14,5 +14,5 @@ If you notice some functions missing, don't hesitate to create a issue or to mak
 - Restart VS Code
 
 ## Example of use :
-![gif1](/snapshot/gif1.gif)
+![](/images/gif1.gif)
 
