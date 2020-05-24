@@ -71,6 +71,12 @@
             "RMenu:Get(${1:Type}, ${2:Name})"
         ]
     },
+    "RMenu:GetType": {
+        "prefix": "RMenu:GetType",
+        "body": [
+            "RMenu:GetType(${1:Type})"
+        ]
+    },
     "RMenu:Settings": {
         "prefix": "RMenu:Settings",
         "body": [
@@ -92,13 +98,13 @@
     "RageUI.Button": {
         "prefix": "RageUI.Button",
         "body": [
-            "RageUI.Button(${1:Label}, ${2:Description}, ${3:Style}, ${4:Enabled}, function(Hovered, Active, Selected) \n\tif ${5:Action} then \n\t-- Your action \n\tend \n\tend, ${6:Submenu})"
+            "RageUI.Button(${1:Label}, ${2:Description}, ${3:Enabled}, function(Hovered, Active, Selected) \n\tif ${4:Action} then \n\t-- Your action \n\tend \n\tend, ${5:Submenu})"
         ]
     },
-    "RageUI.CenterButton": {
-        "prefix": "RageUI.CenterButton",
+    "RageUI.ButtonWithStyle": {
+        "prefix": "RageUI.Button",
         "body": [
-            "RageUI.CenterButton(${1:Label}, ${2:Description}, ${3:Style}, ${4:Enabled}, function(Hovered, Active, Selected) \n\tif ${5:Action} then \n\t-- Your action \n\tend \n\tend, ${6:Submenu})"
+            "RageUI.Button(${1:Label}, ${2:Description}, ${3:Style}, ${4:Enabled}, function(Hovered, Active, Selected) \n\tif ${5:Action} then \n\t-- Your action \n\tend \n\tend, ${6:Submenu})"
         ]
     },
     "RMenu:Separator": {
@@ -146,13 +152,13 @@
     "RageUI.CreateMenu": {
         "prefix": "RageUI.CreateMenu",
         "body": [
-            "RageUI.CreateMenu(${1:Title}, ${2:Title}, ${3:X}, ${4:Y}, {$5:TextureDictionary}, ${6:TextureName}, ${7:R}, ${8:G}, ${9:B}, ${10:A})"
+            "RageUI.CreateMenu(${1:Title}, ${2:Description}, ${3:X}, ${4:Y}, {$5:TextureDictionary}, ${6:TextureName}, ${7:R}, ${8:G}, ${9:B}, ${10:A})"
         ]
     },
     "RageUI.CreateSubMenu": {
         "prefix": "RageUI.CreateSubMenu",
         "body": [
-            "RageUI.CreateSubMenu(${1:Title}, ${2:Title}, ${3:Subtitle}, ${4:X}, ${5:Y}, {$6:TextureDictionary}, ${7:TextureName}, ${8:R}, ${9:G}, ${10:B}, ${11:A})"
+            "RageUI.CreateSubMenu(${1:ParentMenu}, ${2:Title}, ${3:Description}, ${4:X}, ${5:Y}, {$6:TextureDictionary}, ${7:TextureName}, ${8:R}, ${9:G}, ${10:B}, ${11:A})"
         ]
     },
     "RMenu.Menus:SetSubtitle": {
@@ -251,10 +257,17 @@
             "RageUI.StatisticPanel(${1:Percent}, {$2:Text}, ${3:Index})"
         ]
     },    
+    "RageUI.StatisticPanelAdvanced": {
+        "prefix": "RageUI.StatisticPanel",
+        "body": [
+            "RageUI.StatisticPanel(${1:Text}, {$2:Percent}, ${3:RGBA1}, ${3:Percent2}, ${3:RGBA2}, ${6:RGBA3}, ${7:Index})"
+        ]
+    },    
     "RageUI.HeritageWindow": {
         "prefix": "RageUI.HeritageWindow",
         "body": [
             "RageUI.HeritageWindow(${1:Mum}, {$2:Dad})"
         ]
     },
+    
 }
