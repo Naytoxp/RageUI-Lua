@@ -1,6 +1,5 @@
 # RageUI-Lua
-This project is discontinued, but feel free to make a PR if you want to keep it updated.
-To use with : https://github.com/iTexZoz/RageUI (1.X Version)
+To use with : https://github.com/iTexZoz/RageUI (Latest Version)
 
 If you notice some functions missing, or any error don't hesitate to create a issue or to make a pull request.
 

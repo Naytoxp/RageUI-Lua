@@ -1,12 +1,16 @@
 {
-    "name": "RageUI FiveM LUA",
+    "name": "rage-ui-lua",
     "description": "RageUI Support and Autocompletion For Visual Studio Code \n From : https://github.com/iTexZoz/RageUI",
-    "version": "1.0.0",
-    "publisher": "Naytox",
+    "version": "2.0.0",
+    "publisher": "Naytoxp",
     "icon": "images/logo.png",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Naytoxp/RageUI-Lua"
+    },
     "license": "Free",
     "engines": {
-        "vscode": "^1.0.0 Alpha"
+        "vscode": "^1.0.0"
     },
     "categories": [
         "Snippets"
