@@ -59,7 +59,13 @@
             "Visual.PromptDuration(${1:duration}, ${2:text}, ${3:spinner})"
         ]
     },
-    "RageUI.Button": {
+    "RageUI.ButtonWithStyle": {
+        "prefix": "RageUI.ButtonWithStyle",
+        "body": [
+            "RageUI.ButtonWithStyle(${1:Label}, ${2:Description}, ${3:Style}, ${4:Enabled}, ${5:Callback}, ${6:Submenu})"
+        ]
+    },
+        "RageUI.Button": {
         "prefix": "RageUI.Button",
         "body": [
             "RageUI.Button(${1:Label}, ${2:Description}, ${3:Style}, ${4:Enabled}, ${5:Callback}, ${6:Submenu})"
